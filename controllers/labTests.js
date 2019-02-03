@@ -7,10 +7,10 @@ var db = require("../models");
 //This will be used in the api route labTests
 module.exports = {
     findAll: function(req, res) {
-        db.labTests
+        db.labTest
         .find(req.query)
-        .then(function(dblabTests) {
-            res.json(dblabTests);
+        .then(function(dblabTest) {
+            res.json(dblabTest);
         })        
     }
 }

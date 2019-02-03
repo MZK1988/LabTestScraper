@@ -9,3 +9,5 @@ router.get("/", function(req, res) {
       res.render("home", { articles: dbArticles });
     });
 });
+
+module.exports = router;
